@@ -16,17 +16,17 @@ config = GlowTTSConfig(
     num_eval_loader_workers=8,
     run_eval=True,
     test_delay_epochs=-1,
-    epochs=1000,
+    epochs=100,
     text_cleaner="phoneme_cleaners",
     use_phonemes=True,
     phoneme_language="en-us",
     phoneme_cache_path=os.path.join(output_path, "phoneme_cache"),
-    print_step=1,
+    print_step=5,
     print_eval=False,
     mixed_precision=True,
     output_path=output_path,
     datasets=[dataset_config],
-    save_step=425,
+    save_step=500,
 )
 
 
