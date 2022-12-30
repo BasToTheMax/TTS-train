@@ -7,7 +7,8 @@ from TTS.vocoder.configs import UnivnetConfig
 from TTS.vocoder.datasets.preprocess import load_wav_data
 from TTS.vocoder.models.gan import GAN
 
-output_path = os.path.dirname(os.path.abspath(__file__))
+output_path = "data"
+
 config = UnivnetConfig(
     batch_size=32,
     eval_batch_size=16,
@@ -26,7 +27,7 @@ config = UnivnetConfig(
     # lr_gen=1e-4,
     # lr_disc=1e-4,
     lr=0.5,
-    data_path=os.path.join(output_path, "../LJSpeech-1.1/wavs/"),
+    data_path=os.path.join(output_path, "bttm-out/wavs"),
     output_path=output_path,
 )
 
