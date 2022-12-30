@@ -27,7 +27,7 @@ config = GlowTTSConfig(
     output_path=output_path,
     datasets=[dataset_config],
     save_step=500,
-    lr=0.05
+    lr=0.5
 )
 
 
