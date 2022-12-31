@@ -29,6 +29,7 @@ config = UnivnetConfig(
     lr_gen=0.5,
     lr_disc=0.5,
     lr=0.5,
+    save_step=500,
     data_path=os.path.join(output_path, "bttm-out/wavs"),
     output_path=output_path,
 )
